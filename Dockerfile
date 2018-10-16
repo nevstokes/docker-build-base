@@ -40,3 +40,10 @@ RUN apk add \
         build-base \
         xz \
     && rm -rf /var/cache/apk/*
+
+LABEL maintainer="Nev Stokes <mail@nevstokes.com>" \
+      description="Alpine base image with build tools available" \
+      org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.schema-version="1.0" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url=$VCS_URLs
